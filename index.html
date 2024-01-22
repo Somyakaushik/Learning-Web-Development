@@ -9,10 +9,16 @@
     margin:0;
     box-sizing: border-box;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.line1{
+    height: 2px;
+    background-color: grey;
+    border: grey;
 }
 .line{
-    width: 10%;
+    width: 5%;
     height: 5px;
     background-color: rgb(255, 175, 36);
     border: rgb(255, 175, 36);
@@ -21,17 +27,17 @@
 
 body{
     background-color: #172937;
+      font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
 }
-
 .list{
     margin: 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px;
-    
+    margin: 10px;   
 }
-
 .main {
     margin-top: 70px;
     height: 100%;
@@ -40,12 +46,19 @@ body{
     border-radius: 25px;
     padding: 30px;
     margin-left: 30px;
+    font-size: 16px;
 }
+.socialmedia{
+    list-style-type: none;
+    display: flex;
+}
+
 
 .contact{
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    font-size:12px;
 }
 
 .list_details{
@@ -67,6 +80,7 @@ body{
     width: auto;
     background-color:#253644;
     border-radius: 25px;
+    padding: 20px;
 
 }
 .name_year{
@@ -75,14 +89,15 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: 10%;
-margin-bottom: 20%;
+margin-bottom: 10%;
 }
 
 #year{
 background-color: #172937;
 border-radius: 15px;
 padding: 10px;
-margin-top: 10%;
+margin-top: 5%;
+font-size: 12px;
 }
 
 
@@ -93,7 +108,7 @@ font-size: 2rem;
 }
 
 .image {
-margin-top: 20px;
+margin-top: 60px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -159,13 +174,13 @@ p{
 .details{
     margin-bottom: 2px;
     color: grey;
+    font-size: 12px;
 }
 
 .h2{
     margin-top: 5%;;
     margin-bottom: 5%;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 30px;
 } 
 
 .content_main{
@@ -185,12 +200,12 @@ p{
 }
 
 .portfolio {
-    min-width: 80%;
+    min-width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin:0 auto;
-    max-width: 80% ; 
+    max-width: 95% ; 
 
 
     @media only screen and (max-width: 1200px) {
@@ -198,11 +213,13 @@ p{
         flex-direction: column;
 
         .portfolio{
-            width: 80%;
+            width: 85%;
         }
         .contact{
             visibility: hidden;
-            
+        }
+        .socialmedia{
+            visibility: hidden;
         }
         .aside{
             display: flex;
@@ -220,6 +237,7 @@ p{
             margin-left: 2%;
             margin-bottom: 3%;
             margin-right: 5%;
+            margin-top: 3%;
         }
         .name_year{
             display: flex;
@@ -257,8 +275,10 @@ flex-direction: column;
 }
 .contact{
     visibility: hidden;
-    
 }
+.socialmedia{
+            visibility: hidden;
+        }
 .aside{
     display: flex;
     flex-direction: row;
@@ -275,6 +295,7 @@ flex-direction: column;
     margin-left: 2%;
     margin-bottom: 3%;
     margin-right: 5%;
+    margin-top: 3%;
 }
 .name_year{
     display: flex;
@@ -327,11 +348,11 @@ flex-direction: column;
                 <h2 title="name">Somya Kaushik</h2>
                 <p id="year">Student-2ndYear(2022-26)</p>
             </div>
-
+<hr class="line1">
             <ul class="contact">
                 <li class="list">
                     <div class="logo">
-                      <img src="images\email.png" alt="E-mail" style="width: 50px;">  
+                      <img src="images\email.png" alt="E-mail" style="width: 40px;">  
                     </div>
                     <div class="list_details">
                         <p class="details">E-MAIL</p>
@@ -340,7 +361,7 @@ flex-direction: column;
                 </li>
                 <li class="list">
                     <div class="logo">
-                        <img src="images\telephone.png" alt="Phone" style="width: 50px;">  
+                        <img src="images\telephone.png" alt="Phone" style="width: 40px;">  
                       </div>
                     <div class="list_details">
                         <p class="details">PHONE</p>
@@ -349,7 +370,7 @@ flex-direction: column;
                 </li>
                 <li class="list">
                     <div class="logo">
-                        <img src="images\calendar.png" alt="Birthday" style="width: 50px;">  
+                        <img src="images\calendar.png" alt="Birthday" style="width: 40px;">  
                       </div>
                     <div class="list_details">
                         <p class="details">BIRTHDAY</p>
@@ -358,7 +379,7 @@ flex-direction: column;
                 </li>
                 <li class="list">
                     <div class="logo">
-                        <img src="images\placeholder.png" alt="Location" style="width: 50px;">  
+                        <img src="images\placeholder.png" alt="Location" style="width: 40px;">  
                       </div>
                     <div class="list_details">
                         <p class="details">LOCATION</p>
@@ -367,6 +388,20 @@ flex-direction: column;
                 </li>
             </ul>
 
+
+            <ul class="socialmedia">
+            <li class="social-media-item">
+              <a href="#"><img src="images\fb.png" alt="facebook" style="width: 20px;"></a>
+            </li>
+
+            <li class="social-media-item">
+              <a href="#"><img src="images\linkedin.png" alt="linkedin" style="width: 20px;"></a>
+            </li>
+
+            <li class="social-media-item">
+                <a href="#"><img src="images\twitter.png" alt="twitter" style="width: 20px;"></a>
+            </li>
+          </ul>
         </aside>
         <div class="main">
             <header>
@@ -375,7 +410,6 @@ flex-direction: column;
             <hr class="line">
             <section>
                 <p class="information">Hey there, I'm thrilled to welcome you to my virtual corner of the internet. I'm currently a third-semester B.Tech student at Moradabad Institute of Technology, where I'm diving headfirst into the fascinating world of technology.
-
                 </p><p class="information">As I embark on this educational journey, my goal is to unravel the mysteries of the digital realm. I'm driven by an insatiable curiosity to understand how things work under the hood and to create meaningful solutions using code. Beyond my academic pursuits, you'll often find me tinkering with side projects, absorbing insights from tech blogs, and engaging in discussions about the limitless possibilities that technology offers.</p>
 
 
