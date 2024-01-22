@@ -1,0 +1,402 @@
+:root {
+    --main-bg-color: #172937;
+    --text-color: white;
+    --highlight-color: rgb(255, 175, 36);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.line1 {
+    height: 2px;
+    background-color: grey;
+    border: grey;
+}
+
+.line {
+    width: 5%;
+    height: 5px;
+    background-color: var(--highlight-color);
+    border: var(--highlight-color);
+    border-radius: 2px;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.main {
+    margin-top: 70px;
+    height: 100%;
+    width: 60%;
+    background-color: #253644;
+    border-radius: 25px;
+    padding: 30px;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.socialmedia {
+    list-style-type: none;
+    display: flex;
+}
+
+.contact {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.list_details {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.aside {
+    position: sticky;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: auto;
+    background-color: #253644;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.name_year {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#year {
+    background-color: #172937;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5%;
+    font-size: 12px;
+}
+
+.about {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.image {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 25px;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.content_items {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px;
+    width: 48%;
+    background-color: #172937;
+    border-radius: 15px;
+    align-items: flex-start;
+    margin-bottom: 5%;
+}
+
+.icon_sub_container {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.items_main_content {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.testimonial {
+    display: flex;
+    width: 48%;
+    background-color: #172937;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+    margin-bottom: 5%;
+    padding: 5px;
+    border-radius: 15px;
+    height: 300px;
+}
+
+.testimonialcontent {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-position: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+p {
+    color: hsl(0, 0%, 84%);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.information {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.details {
+    margin-bottom: 2px;
+    color: grey;
+    font-size: 12px;
+}
+
+.h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 30px;
+}
+
+.content_main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.portfolio {
+    min-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 95%;
+
+    @media only screen and (max-width: 1200px) {
+        flex-direction: column;
+
+        .portfolio {
+            width: 85%;
+        }
+        .contact,
+        .socialmedia {
+            display: none;
+        }
+        .aside {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 0;
+            position: relative;
+            align-content: center;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+        .image {
+            margin-left: 2%;
+            margin-bottom: 3%;
+            margin-right: 5%;
+            margin-top: 3%;
+        }
+        .name_year {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 15px;
+            flex-direction: column;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .main {
+            width: 100%;
+            margin-left: 0;
+        }
+        .testimonial {
+            display: flex;
+            width: 48%;
+            background-color: #172937;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: center;
+            margin-bottom: 5%;
+            padding: 5px;
+            border-radius: 15px;
+            height: 300px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .portfolio {
+            width: 80%;
+        }
+        .contact,
+        .socialmedia {
+            display: none;
+        }
+        .aside {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 0;
+            position: relative;
+            align-content: center;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+        .image {
+            margin-left: 2%;
+            margin-bottom: 3%;
+            margin-right: 5%;
+            margin-top: 3%;
+        }
+        .name_year {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-direction: column;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .main {
+            width: 100%;
+            margin-left: 0;
+        }
+        .content_items {
+            display: flex;
+            justify-content: flex-start;
+            padding: 30px;
+            width: 100%;
+            background-color: #172937;
+            border-radius: 15px;
+            align-items: flex-start;
+            margin-bottom: 5%;
+        }
+        .testimonial {
+            display: flex;
+            width: 100%;
+            background-color: #172937;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: center;
+            margin-bottom: 5%;
+            padding: 5px;
+            border-radius: 15px;
+            height: 300px;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        flex-direction: column;
+
+        .portfolio {
+            width: 80%;
+        }
+        .contact,
+        .socialmedia {
+            display: none;
+        }
+        .aside {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 0;
+            position: relative;
+            align-content: center;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+        .image {
+            margin-left: 2%;
+            margin-bottom: 3%;
+            margin-right: 5%;
+            margin-top: 3%;
+        }
+        .name_year {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-direction: column;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .main {
+            width: 100%;
+            margin-left: 0;
+        }
+        .content_items {
+            display: flex;
+            justify-content: flex-start;
+            padding: 30px;
+            width: 100%;
+            background-color: #172937;
+            border-radius: 15px;
+            align-items: flex-start;
+            margin-bottom: 5%;
+        }
+        .testimonial {
+            display: flex;
+            width: 100%;
+            background-color: #172937;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: center;
+            margin-bottom: 5%;
+            padding: 5px;
+            border-radius: 15px;
+            height: 300px;
+        }
+    }
+}
