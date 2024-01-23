@@ -11,7 +11,9 @@
     color: var(--text-color);
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
-
+.social-media-item {
+    margin-right: 15px; 
+}
 .line1 {
     height: 2px;
     background-color: grey;
@@ -145,6 +147,10 @@ body {
     flex-direction: column;
 }
 
+.icon{
+    margin-right: 20px;
+}
+
 .testimonial {
     display: flex;
     width: 48%;
@@ -223,8 +229,12 @@ p {
             width: 85%;
         }
         .contact,
-        .socialmedia {
+        .socialmedia,
+        .social-media-item {
             display: none;
+        }
+        .icon{
+            margin-right: 20px;
         }
         .aside {
             display: flex;
@@ -278,8 +288,12 @@ p {
             width: 80%;
         }
         .contact,
-        .socialmedia {
+        .socialmedia,
+        .social-media-item {
             display: none;
+        }
+        .icon{
+            margin-right: 20px;
         }
         .aside {
             display: flex;
@@ -345,6 +359,9 @@ p {
         .contact,
         .socialmedia {
             display: none;
+        }
+        .icon{
+            margin-right: 20px;
         }
         .aside {
             display: flex;
